@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: #000;
+}
+
+main{
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+main > div{
+  display: inline-block;
+  padding: 0;
+  margin: -1.5px;
+}
+
+div > div{
+  height: 70px;
+  width: 70px;
+  padding: 0;
+  margin: 0;
+}
+
+div:nth-child(2n) > div:nth-child(2n){
+  background-image: url(./black.jpg);
+}
+
+div:nth-child(2n+1) > div:nth-child(2n+1){
+  background-image: url(./black.jpg);
+}
+
+div:nth-child(2n+1) > div:nth-child(2n){
+  background-image: url(./white.jpg);
+}
+
+div:nth-child(2n) > div:nth-child(2n+1){
+  background-image: url(./white.jpg);
+}
