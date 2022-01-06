@@ -9,6 +9,7 @@ body{
 
 main{
   margin: 20px auto;
+  min-width: 570px;
   max-width: 600px;
   font-size: 0;
 }
